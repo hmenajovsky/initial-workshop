@@ -20,18 +20,18 @@
     color: red;
 }
 
-table {
+#complex-table table {
   border-collapse: collapse;
 }
 
-table,
-th,
-td {
+#complex-table table,
+#complex-table th,
+#complex-table td {
   border: 1px solid;
 }
 
-th,
-td {
+#complex-table th,
+#complex-table td {
   padding: 10px;
   text-align: center;
 }
@@ -39,7 +39,7 @@ td {
 /* CSS challenge 1 */
 
 #red-target div {  
-     border: 1px solid #000;
+     border: 2px solid #000;
      box-sizing: border-box;
      height: 200px;
      width: 200px;
@@ -48,47 +48,179 @@ td {
 
 #red-target div div {
     background-color: red;
-    border: 1px dashed #000;
+    border: 2px dashed #000;
     width: 100px;
     height: 100px;
+    box-sizing: border-box;
 }
 
-#purple-blocks div {
+#purple-blocks > div {
     width: 300px;
-    border: 1px solid #000;
+    border: 2px solid #000;
     margin-bottom: 5px;    
+    box-sizing: border-box;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 0;
 }
 
-#purple-blocks div div{
+#purple-blocks > div div{
     background-color: purple;
-    box-sizing: boder-box;
-    margin: 2px;
+    box-sizing: border-box;  
+    margin-bottom: 2px;    
 }
 
 #purple-blocks div:first-child div:first-child {
     width: 100px; 
     text-align: left;
-    margin-right: 200px;
+    margin-right: 198px;   
 }
 
 #purple-blocks div:first-child div:nth-child(2) {
     width: 200px; 
     text-align: left;
-    margin-right: 100px;
+    margin-right: 98px;   
 }
 
 #purple-blocks div:nth-child(2) div:first-child {
-    width: 200px; 
+    width: 196px; 
     text-align: right;
     margin-left: 100px;
+    margin-right: 2px;
 }
 
 #purple-blocks div:nth-child(2) div:nth-child(2) {
     width: 100px; 
     text-align: right;
-    margin-right: 200px;
+    margin-right: 198px;
 }
 
 /* CSS challenge 2 */
+
+#black-white-targets > div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    position: relative;
+    }
+
+#black-white-targets > div div {
+    width: 20px;
+    height: 20px;
+    background-color: #000;   
+}
+
+#black-white-targets > div div:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#black-white-targets > div div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0; 
+}
+
+#black-white-targets > div div:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+}
+
+#black-white-targets > div div:nth-child(4){
+    position: absolute;
+    bottom: 0;
+    right: 0; 
+}
+
+#black-white-targets > div div:last-child  {
+    position: absolute;
+    top: 90px;
+    right: 90px;
+}
+
+ #green-dots > div {
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+#green-dots > div:nth-child(2) div:first-child {
+    float:left;
+}
+
+#green-dots > div:nth-child(2) div:nth-child(3) {
+    float:right;
+}
+
+#green-dots > div div {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    padding: 40px 60px 20px 40px;   
+    box-sizing: border-box;
+    color: #FFF;  
+    margin: 10px;
+}   
+
+#green-dots > div div:first-child, #green-dots > div div:nth-child(2) {
+    float:left;
+}
+
+#green-dots p {
+    clear: both;
+}
+
+
+#green-dots > div div:nth-child(4), #green-dots > div div:nth-child(5) {
+    float:left;
+}
+
+#green-dots > div:nth-child(2) div:nth-child(5), #green-dots > div:nth-child(2) div:nth-child(6) {
+    display: inline-block;
+}
+
+#blue-blocks > div {
+    border: 1px solid #000;
+    padding: 5px;
+    width: 500px;
+}
+
+#blue-blocks > div div {
+    margin: 5px;
+}
+
+#blue-blocks > div div div {
+    background-color: steelblue;
+    color: #FFF;
+    padding: 25px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    
+}
+
+#blue-blocks > div:first-child div {
+    display: flex;
+    justify-content: space-between;    
+}
+
+#blue-blocks > div:nth-child(2) div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#blue-blocks > div div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
 
 
