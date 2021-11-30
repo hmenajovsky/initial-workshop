@@ -1,0 +1,94 @@
+
+.inline {
+    color: seagreen;
+}
+
+#italic {
+    color: salmon;
+}
+
+#table-frame {
+    border: 1px solid #000;
+}
+
+.black-cell {
+    border: 1px solid #000;          
+}
+
+.red-cell {
+    border: 1px solid red;
+    color: red;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* CSS challenge 1 */
+
+#red-target div {  
+     border: 1px solid #000;
+     box-sizing: border-box;
+     height: 200px;
+     width: 200px;
+     padding: 50px;
+}
+
+#red-target div div {
+    background-color: red;
+    border: 1px dashed #000;
+    width: 100px;
+    height: 100px;
+}
+
+#purple-blocks div {
+    width: 300px;
+    border: 1px solid #000;
+    margin-bottom: 5px;    
+}
+
+#purple-blocks div div{
+    background-color: purple;
+    box-sizing: boder-box;
+    margin: 2px;
+}
+
+#purple-blocks div:first-child div:first-child {
+    width: 100px; 
+    text-align: left;
+    margin-right: 200px;
+}
+
+#purple-blocks div:first-child div:nth-child(2) {
+    width: 200px; 
+    text-align: left;
+    margin-right: 100px;
+}
+
+#purple-blocks div:nth-child(2) div:first-child {
+    width: 200px; 
+    text-align: right;
+    margin-left: 100px;
+}
+
+#purple-blocks div:nth-child(2) div:nth-child(2) {
+    width: 100px; 
+    text-align: right;
+    margin-right: 200px;
+}
+
+/* CSS challenge 2 */
+
+
