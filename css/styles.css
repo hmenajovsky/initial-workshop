@@ -92,8 +92,77 @@
 #purple-blocks div:nth-child(2) div:nth-child(2) {
     width: 100px; 
     text-align: right;
-    margin-right: 198px;
+    margin-right: 198px;    
 }
+
+
+    #flexbox-rows > div {
+    width: 300px;
+    box-sizing: border-box;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;  
+}
+
+    #flexbox-rows > div div {
+    width: 300px;
+    box-sizing: border-box;  
+    margin-bottom: 2px;  
+    }
+
+    #flexbox-rows > div div div {
+    width: 70px;
+    height: 50px;
+    box-sizing: border-box;  
+    margin: 0;
+    color: #FFF;
+    display: inline-block;
+    padding: 25px;
+}
+
+    #flexbox-rows > div div:first-child div {
+    background-color: orange;
+    border-left : 2px solid green;
+}
+
+    #flexbox-rows > div div:nth-child(2) div {
+    background-color: green;
+    border-right: 2px solid orange;
+}
+
+    #inline-block > div {
+    width: 300px;
+    box-sizing: border-box;    
+    }
+    
+    #inline-block > div div {
+        width: 300px;
+        box-sizing: border-box;  
+        margin-bottom: 2px;  
+        }
+    
+    #inline-block > div div div {
+        width: 70px;
+        height: 50px;
+        box-sizing: border-box;  
+        margin: 0;
+        color: #FFF;
+        display: inline-block;
+        padding: 25px;
+    }
+    
+    #inline-block > div div:first-child div {
+        background-color: red;
+        border-left : 2px solid black;
+    }
+    
+    #inline-block > div div:nth-child(2) div {
+        background-color: #000;
+        border-right: 2px solid red;
+    }
+
+
+
 
 /* CSS challenge 2 */
 
@@ -217,6 +286,8 @@
     display: flex;
     justify-content: space-between;
 }
+
+
 
 
 
